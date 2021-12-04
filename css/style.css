@@ -1,5 +1,6 @@
 body {
   background-color: #363636;
+  box-sizing: border-box;
 }
 
 .container {
@@ -28,10 +29,15 @@ body {
   font-weight: normal;
   font-size: 16px;
   color: #ffffff;
+  position: relative;
+  transition: all .3s;
+  padding: 15px 0 14px;
 }
 
 .header__menu-link a:hover {
   color: #C61A27;
+  border: 1px solid #C61A27;
+  padding: 10px 20px;
 }
 
 .header__info {
@@ -58,10 +64,30 @@ body {
   margin: 0;
 }
 
+.title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 120%;
+  color: #fff;
+}
+
+.title::before {
+  content: "";
+  display: block;
+  width: 110px;
+  height: 2px;
+  background: #C61A27;
+  position: relative;
+  top: 30px;
+  left: -140px;
+}
+
 .offer {
   position: relative;
   margin-top: 40px;
-  max-height: 899px;
+  height: 899px;
 }
 
 .offer__img {
@@ -90,17 +116,6 @@ body {
   color: #fff;
 }
 
-.offer__box-title::before {
-  content: "";
-  display: block;
-  width: 110px;
-  height: 2px;
-  background: #C61A27;
-  position: relative;
-  top: 30px;
-  left: -140px;
-}
-
 .offer__box-text {
   font-family: Open Sans;
   font-style: normal;
@@ -118,15 +133,19 @@ body {
   border: none;
   padding: 20px 90px;
   margin: 0px 0px 0px 270px;
+  transition: all .8s;
 }
 
 .offer__box-btn:hover {
+  transition: all .8s;
   background: #C61A27;
   border: 2px solid #fff;
 }
 
 .offer__box-btn:hover a {
   color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 .offer__box-btn a {
@@ -138,4 +157,118 @@ body {
   line-height: 170%;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.advantage {
+  margin-top: 300px;
+  height: 400px;
+}
+
+.advantage .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantage h2 {
+  margin-left: 140px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 140%;
+  color: #fff;
+}
+
+.advantage__row {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.advantage__row-item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 140px;
+}
+
+.advantage__row-item-text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+
+.service {
+  height: 710px;
+}
+
+.service .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.service__title {
+  margin-left: 140px;
+}
+
+.service__description {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 170%;
+  margin-left: 140px;
+  color: #fff;
+}
+
+.service__box {
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service__box-item {
+  padding: 30px 25px;
+  background: #1E1E1E;
+  width: 730px;
+  height: 210px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.service__box-item-number {
+  position: absolute;
+  top: -25px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+
+.service__box-item-title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.service__box-item-description {
+  margin-top: 20px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 170%;
+  color: #FFFFFF;
 }
