@@ -1,0 +1,141 @@
+body {
+  background-color: #363636;
+}
+
+.container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  max-width: 1620px;
+  margin: auto;
+}
+
+.header {
+  max-height: 105px;
+}
+
+.header__menu-list {
+  list-style: none;
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+}
+
+.header__menu-link a {
+  text-decoration: none;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.header__menu-link a:hover {
+  color: #C61A27;
+}
+
+.header__info {
+  width: 520px;
+  justify-content: space-between;
+  display: flex;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #fff;
+}
+
+.header__info-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__info-link:hover {
+  color: #C61A27;
+}
+
+.header__info p {
+  margin: 0;
+}
+
+.offer {
+  position: relative;
+  margin-top: 40px;
+  max-height: 899px;
+}
+
+.offer__img {
+  position: absolute;
+}
+
+.offer .container {
+  z-index: 9;
+  position: relative;
+}
+
+.offer__box {
+  margin: 236px 0px 0px auto;
+  width: 795px;
+  height: 380px;
+  background: linear-gradient(270.1deg, #1E1E1E 14.14%, #1E1E1E 85.36%, #C61A27 85.37%, #C61A27 99.93%);
+}
+
+.offer__box-title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 120%;
+  margin: 70px 0px 35px 270px;
+  color: #fff;
+}
+
+.offer__box-title::before {
+  content: "";
+  display: block;
+  width: 110px;
+  height: 2px;
+  background: #C61A27;
+  position: relative;
+  top: 30px;
+  left: -140px;
+}
+
+.offer__box-text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 170%;
+  color: #fff;
+  margin: 0px 0px 35px 270px;
+}
+
+.offer__box-btn {
+  width: 299px;
+  height: 70px;
+  background: #FFFFFF;
+  border: none;
+  padding: 20px 90px;
+  margin: 0px 0px 0px 270px;
+}
+
+.offer__box-btn:hover {
+  background: #C61A27;
+  border: 2px solid #fff;
+}
+
+.offer__box-btn:hover a {
+  color: #fff;
+}
+
+.offer__box-btn a {
+  color: #363636;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 170%;
+  text-decoration: none;
+  text-transform: uppercase;
+}
