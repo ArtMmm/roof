@@ -12,6 +12,8 @@ body {
 
 .header {
   max-height: 105px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .header .container {
@@ -326,6 +328,10 @@ body {
   line-height: 170%;
 }
 
+.delivery {
+  margin-top: 150px;
+}
+
 .delivery__box {
   margin-top: 40px;
   display: flex;
@@ -346,8 +352,82 @@ body {
   width: 100%;
 }
 
+.office {
+  min-height: 648px;
+  margin-top: 150px;
+}
+
+.office__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.office__box-text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.office__box-text-title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.office__box-text-titles {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.office__box-text a {
+  margin: 0px 20px 0px 0px;
+  display: inline-block;
+  height: 60px;
+}
+
+.office__box-text-descr a {
+  text-decoration: none;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.office__box-text-descr a:hover {
+  color: #C61A27;
+}
+
+.office__box-img {
+  position: relative;
+  width: 796px;
+  height: 568px;
+}
+
+.office__box-img-of-1 {
+  position: absolute;
+}
+
+.office__box-img-of-2 {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  top: 103px;
+}
+
+.office__box-img-of-3 {
+  position: absolute;
+  left: 82px;
+  bottom: 0;
+}
+
 .price {
   min-height: 1780px;
+  margin-top: 150px;
 }
 
 .price .container {
