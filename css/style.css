@@ -1036,3 +1036,9 @@ body {
     margin-top: 20px;
   }
 }
+
+@media (max-width: 400px) {
+  .footer__text {
+    text-align: start;
+  }
+}
