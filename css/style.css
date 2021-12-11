@@ -8,11 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-ul[class],
-ol[class] {
-  padding: 0;
-}
-
 body,
 h1,
 h2,
@@ -139,6 +134,7 @@ body {
 }
 
 .container {
+  padding: 0px 20px;
   max-width: 1620px;
   margin: auto;
   width: 100%;
@@ -309,7 +305,7 @@ body {
 .offer__box-btn._active {
   transform: translate(0px, 0px);
   opacity: 1;
-  transition: 0.6s ease 1s;
+  transition: 0.3s ease .6s;
 }
 
 .offer__box-btn a {
@@ -598,6 +594,18 @@ body {
   margin-top: 150px;
 }
 
+.delivery__title {
+  transform: translate(-180%, 0px);
+  transition: all 0.8s ease 0.8s;
+  opacity: 0;
+}
+
+.delivery__title._active {
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.8s;
+  opacity: 1;
+}
+
 .delivery__box {
   margin-top: 40px;
   display: flex;
@@ -606,16 +614,52 @@ body {
 }
 
 .delivery__box p {
-  margin: 0px 0px 0px 140px;
+  margin-top: 30px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
+  line-height: 170%;
 }
 
 .delivery__box img {
   max-width: 795px;
   width: 100%;
+  transform: translate(180%, 0px);
+  transition: all 0.8s ease 0.8s;
+  opacity: 0;
+}
+
+.delivery__box img._active {
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.8s;
+  opacity: 1;
+}
+
+.delivery__box-text {
+  flex-direction: column;
+  margin: 0px 0px 0px 140px;
+  transform: translate(-180%, 0px);
+  transition: all 0.8s ease 0.8s;
+  opacity: 0;
+}
+
+.delivery__box-text._active {
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.8s;
+  opacity: 1;
+}
+
+.delivery__box-text-title {
+  margin-top: 30px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+.delivery__box-text-title:nth-child(1) {
+  margin-top: 0;
 }
 
 .office {
@@ -744,6 +788,7 @@ body {
 
 .price__box-item {
   max-width: 520px;
+  width: 100%;
   min-height: 835px;
   background: #1E1E1E;
   margin: 0px 20px 30px 0px;
@@ -751,7 +796,7 @@ body {
 }
 
 .price__box-item-img {
-  width: 460px;
+  max-width: 460px;
   height: 390px;
 }
 
@@ -840,4 +885,111 @@ body {
   font-size: 28px;
   line-height: 170%;
   text-align: start;
+}
+
+@media (max-width: 1440px) {
+  .header__info {
+    position: absolute;
+    right: 30px;
+  }
+  .header__menu {
+    width: 100%;
+    justify-content: center;
+  }
+  .header__menu-list {
+    overflow-y: auto;
+    position: fixed;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    top: 0;
+    z-index: 20;
+    left: -999%;
+    width: 100%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: #000;
+    transition: all 0.8s ease 0.8s;
+  }
+  .header__menu-link {
+    padding: 20px 0px;
+  }
+  .header__menu-list_active {
+    left: 0;
+    z-index: 20;
+    padding: 30px 0px;
+    justify-content: flex-start;
+    transition: all 0.8s ease 0.8s;
+  }
+  .hamburger {
+    display: block;
+    position: fixed;
+    left: 30px;
+    z-index: 99;
+    top: 54px;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 12px;
+  }
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 3px;
+    transition: 0.5s all;
+  }
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+}
+
+@media (max-width: 991px) {
+  .header__info {
+    display: none;
+  }
+  .offer {
+    min-height: 400px;
+  }
+  .offer .container {
+    min-height: 400px;
+  }
+  .offer__box {
+    background: #1f1f1f;
+    top: 40px;
+    margin: auto;
+  }
+  .offer__box-title {
+    margin: 20px 30px;
+  }
+  .offer__box-title::before {
+    display: none;
+  }
+  .offer__box-text {
+    margin: 0px 30px;
+  }
+  .offer__box-btn {
+    margin: 20px 30px;
+  }
+  .offer__img {
+    display: none;
+  }
+}
+
+@media (max-width: 676px) {
+  .price__box-item {
+    margin: 20px;
+  }
+  .price__box-item-text-row .two {
+    text-align: right;
+  }
 }
