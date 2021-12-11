@@ -1033,6 +1033,7 @@ body {
   }
   .office__box {
     height: 630px;
+    top: 0;
   }
   .footer__link {
     text-align: left;
