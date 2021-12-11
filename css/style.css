@@ -787,7 +787,7 @@ body {
 }
 
 .price__box-item {
-  max-width: 520px;
+  max-width: 500px;
   width: 100%;
   min-height: 835px;
   background: #1E1E1E;
@@ -808,6 +808,7 @@ body {
 
 .price__box-item-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px 0px;
   border-bottom: 1px solid #C61A27;
@@ -990,6 +991,7 @@ body {
     margin: 20px;
   }
   .price__box-item-text-row .two {
+    margin-left: 20px;
     text-align: right;
   }
 }
