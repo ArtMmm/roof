@@ -517,15 +517,6 @@ body {
   font-size: 18px;
   line-height: 170%;
   color: #FFFFFF;
-  transform: translate(0px, 120%);
-  opacity: 0;
-  transition: all 0.6s ease 0.6s;
-}
-
-.service__box-item-description._active {
-  transform: translate(0px, 0px);
-  transition: all 0.6s ease 0.6s;
-  opacity: 1;
 }
 
 .about {
