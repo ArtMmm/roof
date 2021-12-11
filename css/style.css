@@ -1025,6 +1025,9 @@ body {
 }
 
 @media (max-width: 676px) {
+  .offer__box-btn {
+    margin: 20px auto;
+  }
   .offer {
     text-align: center;
   }
