@@ -854,6 +854,21 @@ body {
   text-align: end;
 }
 
+.price__box-item .btn {
+  margin: 20px auto 0px auto;
+  border: none;
+  text-transform: uppercase;
+  width: 310px;
+  height: 70px;
+  padding: 20px 50px;
+  color: #fff;
+  background: linear-gradient(270deg, #C31A26 0%, #9E101A 100%);
+}
+
+.price__box-item .btn a {
+  width: 200px;
+}
+
 .footer {
   margin-top: 150px;
   display: flex;
