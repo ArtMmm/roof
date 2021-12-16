@@ -798,6 +798,9 @@ body {
 }
 
 .price__box-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 500px;
   width: 100%;
   min-height: 835px;
