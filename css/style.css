@@ -1062,6 +1062,12 @@ body {
     height: 630px;
     top: 0;
   }
+  .price__box-item {
+    padding: 15px;
+  }
+  .price__box-item-text-row p {
+    font-size: 14px;
+  }
   .footer__link {
     text-align: left;
     margin-top: 20px;
